@@ -600,9 +600,9 @@
           headingApparition: "split_fade",
           pageType: "product",
           moneyFormat:
-            "\u003cspan class=money\u003e${{amount}}\u003c\/span\u003e",
+            "\u003cspan class=money\u003e£{{amount}}\u003c\/span\u003e",
           moneyWithCurrencyFormat:
-            "\u003cspan class=money\u003e${{amount}} AUD\u003c\/span\u003e",
+            "\u003cspan class=money\u003e£{{amount}} AUD\u003c\/span\u003e",
           currencyCodeEnabled: true,
           cartType: "drawer",
           showDiscount: true,
@@ -1337,7 +1337,7 @@
       }
 
       window.SliderCartData = {
-        currency_format: "<span class=money>${{amount}}</span>",
+        currency_format: "<span class=money>£{{amount}}</span>",
         offers: [],
         settings: {},
         storefront_access_token: "",
@@ -1949,9 +1949,9 @@
             "https://www.forthehouse.com.au/cdn/shop/files/2025032704453_grande.jpg?v=1748229762",
           URL: "https://www.forthehouse.com.au/products/skirting-board-cleaner",
           Brand: "forthehouse",
-          Price: "$67.00",
+          Price: "£67.00",
           Value: "67.00",
-          CompareAtPrice: "$0.00",
+          CompareAtPrice: "£0.00",
         };
         _learnq.push(["track", "Viewed Product", item]);
         _learnq.push([
@@ -3056,480 +3056,16 @@
       <height-observer variable="header">
         <store-header class="header" hide-on-scroll="100">
           <div class="header__wrapper">
-            <div class="header__main-nav">
-              <div class="header__icon-list">
-                <button
-                  type="button"
-                  class="tap-area lg:hidden"
-                  aria-controls="header-sidebar-menu"
-                >
-                  <span class="sr-only">Open navigation menu</span
-                  ><svg
-                    role="presentation"
-                    stroke-width="2"
-                    focusable="false"
-                    width="22"
-                    height="22"
-                    class="icon icon-hamburger"
-                    viewBox="0 0 22 22"
-                  >
-                    <path
-                      d="M1 5h20M1 11h20M1 17h20"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                    ></path>
-                  </svg>
-                </button>
-
-                <a
-                  href="/search"
-                  class="tap-area sm:hidden"
-                  aria-controls="search-drawer"
-                >
-                  <span class="sr-only">Open search</span
-                  ><svg
-                    role="presentation"
-                    stroke-width="2"
-                    focusable="false"
-                    width="22"
-                    height="22"
-                    class="icon icon-search"
-                    viewBox="0 0 22 22"
-                  >
-                    <circle
-                      cx="11"
-                      cy="10"
-                      r="7"
-                      fill="none"
-                      stroke="currentColor"
-                    ></circle>
-                    <path
-                      d="m16 15 3 3"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path></svg
-                ></a>
-                <nav
-                  class="header__link-list justify-center wrap"
-                  role="navigation"
-                >
-                  <ul class="contents" role="list">
-                    <li>
-                      <a href="/" class="bold link-faded-reverse">Home</a>
-                    </li>
-
-                    <li>
-                      <details
-                        class="relative"
-                        is="dropdown-disclosure"
-                        trigger="click"
-                      >
-                        <summary
-                          class="text-with-icon gap-2.5 bold link-faded-reverse"
-                          data-url="/collections/all"
-                        >
-                          Shop<svg
-                            role="presentation"
-                            focusable="false"
-                            width="10"
-                            height="7"
-                            class="icon icon-chevron-bottom"
-                            viewBox="0 0 10 7"
-                          >
-                            <path
-                              d="m1 1 4 4 4-4"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                            ></path>
-                          </svg>
-                        </summary>
-
-                        <div class="dropdown-menu dropdown-menu--restrictable">
-                          <ul class="contents" role="list">
-                            <li>
-                              <a
-                                href="/collections/storage-solutions"
-                                class="dropdown-menu__item group"
-                              >
-                                <span
-                                  ><span class="reversed-link"
-                                    >Storage Solutions</span
-                                  ></span
-                                >
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/collections/for-the-kitchen"
-                                class="dropdown-menu__item group"
-                              >
-                                <span
-                                  ><span class="reversed-link"
-                                    >Kitchen</span
-                                  ></span
-                                >
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/collections/for-the-bedroom"
-                                class="dropdown-menu__item group"
-                              >
-                                <span
-                                  ><span class="reversed-link"
-                                    >Bedroom</span
-                                  ></span
-                                >
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/collections/for-the-bathroom"
-                                class="dropdown-menu__item group"
-                              >
-                                <span
-                                  ><span class="reversed-link"
-                                    >Bathroom</span
-                                  ></span
-                                >
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/collections/for-the-living-room"
-                                class="dropdown-menu__item group"
-                              >
-                                <span
-                                  ><span class="reversed-link"
-                                    >Living Room
-                                  </span></span
-                                >
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/collections/for-the-outdoors"
-                                class="dropdown-menu__item group"
-                              >
-                                <span
-                                  ><span class="reversed-link"
-                                    >Outdoors</span
-                                  ></span
-                                >
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" class="dropdown-menu__item group">
-                                <span
-                                  ><span class="reversed-link"
-                                    >Bits & Bobs</span
-                                  ></span
-                                >
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/collections/forthekids"
-                                class="dropdown-menu__item group"
-                              >
-                                <span
-                                  ><span class="reversed-link">Kids</span></span
-                                >
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/collections/for-the-pet"
-                                class="dropdown-menu__item group"
-                              >
-                                <span
-                                  ><span class="reversed-link">Pets</span></span
-                                >
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/collections/for-the-adventures"
-                                class="dropdown-menu__item group"
-                              >
-                                <span
-                                  ><span class="reversed-link"
-                                    >Travel</span
-                                  ></span
-                                >
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </details>
-                    </li>
-
-                    <li>
-                      <a
-                        href="https://www.forthehouse.com.au/apps/parcelpanel"
-                        class="bold link-faded-reverse"
-                        >Track My Order</a
-                      >
-                    </li>
-
-                    <li>
-                      <a
-                        href="/pages/our-mission"
-                        class="bold link-faded-reverse"
-                        >About Us</a
-                      >
-                    </li>
-
-                    <li>
-                      <a href="/pages/faqs" class="bold link-faded-reverse"
-                        >FAQ’s</a
-                      >
-                    </li>
-
-                    <li>
-                      <a href="/pages/contact" class="bold link-faded-reverse"
-                        >Contact</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
             <a href="/" class="header__logo"
-              ><span class="sr-only">forthehouse</span
+              ><span class="sr-only">Kyromat</span
               ><img
-                src="//www.forthehouse.com.au/cdn/shop/files/for_the_house.jpg?v=1648101919&amp;width=348"
+                src="ruk_logo.png"
                 alt=""
-                srcset="
-                  //www.forthehouse.com.au/cdn/shop/files/for_the_house.jpg?v=1648101919&amp;width=300 300w,
-                  //www.forthehouse.com.au/cdn/shop/files/for_the_house.jpg?v=1648101919&amp;width=348 348w
-                "
                 width="348"
                 height="145"
                 sizes="150px"
                 class="header__logo-image"
             /></a>
-
-            <div class="header__secondary-nav">
-              <div class="header__icon-list">
-                <div class="hidden md:block shrink-0">
-                  <link
-                    rel="stylesheet"
-                    href="//www.forthehouse.com.au/cdn/shop/t/10/assets/country-flags.css?v=90991155398260764481720221553"
-                    media="print"
-                    onload="this.media='all'; this.onload = null"
-                  />
-                  <div class="relative">
-                    <button
-                      type="button"
-                      class="text-with-icon gap-2.5 group"
-                      aria-controls="popover-localization-form-country-end-sections--16333630373969__header"
-                      aria-expanded="false"
-                    >
-                      <div class="h-stack gap-2">
-                        <span class="country-flags country-flags--AU"></span
-                        ><span class="bold text-sm">Australia (AUD $)</span>
-                      </div>
-                      <svg
-                        role="presentation"
-                        focusable="false"
-                        width="10"
-                        height="7"
-                        class="icon icon-chevron-bottom"
-                        viewBox="0 0 10 7"
-                      >
-                        <path
-                          d="m1 1 4 4 4-4"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                        ></path>
-                      </svg>
-                    </button>
-
-                    <x-popover
-                      id="popover-localization-form-country-end-sections--16333630373969__header"
-                      initial-focus="[aria-selected='true']"
-                      anchor-horizontal="end"
-                      anchor-vertical="end"
-                      class="popover"
-                    >
-                      <p class="h5" slot="title">Country</p>
-                      <form
-                        method="post"
-                        action="/localization"
-                        id="localization-form-country-end-sections--16333630373969__header"
-                        accept-charset="UTF-8"
-                        class="shopify-localization-form"
-                        enctype="multipart/form-data"
-                      >
-                        <input
-                          type="hidden"
-                          name="form_type"
-                          value="localization"
-                        /><input type="hidden" name="utf8" value="✓" /><input
-                          type="hidden"
-                          name="_method"
-                          value="put"
-                        /><input
-                          type="hidden"
-                          name="return_to"
-                          value="/products/skirting-board-cleaner"
-                        /><x-listbox
-                          class="popover-listbox popover-listbox--sm"
-                          role="listbox"
-                          ><button
-                            type="submit"
-                            class="popover-listbox__option"
-                            name="country_code"
-                            role="option"
-                            value="AU"
-                            aria-selected="true"
-                          >
-                            <span
-                              class="country-flags country-flags--AU"
-                            ></span>
-                            <span>Australia (AUD $)</span></button
-                          ><button
-                            type="submit"
-                            class="popover-listbox__option"
-                            name="country_code"
-                            role="option"
-                            value="CA"
-                          >
-                            <span
-                              class="country-flags country-flags--CA"
-                            ></span>
-                            <span>Canada (CAD $)</span></button
-                          ><button
-                            type="submit"
-                            class="popover-listbox__option"
-                            name="country_code"
-                            role="option"
-                            value="DE"
-                          >
-                            <span
-                              class="country-flags country-flags--DE"
-                            ></span>
-                            <span>Germany (EUR €)</span></button
-                          ><button
-                            type="submit"
-                            class="popover-listbox__option"
-                            name="country_code"
-                            role="option"
-                            value="HK"
-                          >
-                            <span
-                              class="country-flags country-flags--HK"
-                            ></span>
-                            <span>Hong Kong SAR (HKD $)</span></button
-                          ><button
-                            type="submit"
-                            class="popover-listbox__option"
-                            name="country_code"
-                            role="option"
-                            value="NZ"
-                          >
-                            <span
-                              class="country-flags country-flags--NZ"
-                            ></span>
-                            <span>New Zealand (NZD $)</span></button
-                          ><button
-                            type="submit"
-                            class="popover-listbox__option"
-                            name="country_code"
-                            role="option"
-                            value="GB"
-                          >
-                            <span
-                              class="country-flags country-flags--GB"
-                            ></span>
-                            <span>United Kingdom (GBP £)</span></button
-                          ><button
-                            type="submit"
-                            class="popover-listbox__option"
-                            name="country_code"
-                            role="option"
-                            value="US"
-                          >
-                            <span
-                              class="country-flags country-flags--US"
-                            ></span>
-                            <span>United States (USD $)</span>
-                          </button></x-listbox
-                        >
-                      </form></x-popover
-                    >
-                  </div>
-                </div>
-                <a
-                  href="/search"
-                  class="hidden tap-area sm:block"
-                  aria-controls="search-drawer"
-                >
-                  <span class="sr-only">Open search</span
-                  ><svg
-                    role="presentation"
-                    stroke-width="2"
-                    focusable="false"
-                    width="22"
-                    height="22"
-                    class="icon icon-search"
-                    viewBox="0 0 22 22"
-                  >
-                    <circle
-                      cx="11"
-                      cy="10"
-                      r="7"
-                      fill="none"
-                      stroke="currentColor"
-                    ></circle>
-                    <path
-                      d="m16 15 3 3"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path></svg></a
-                ><a
-                  href="/cart"
-                  data-no-instant
-                  class="relative tap-area"
-                  aria-controls="cart-drawer"
-                >
-                  <span class="sr-only">Open cart</span
-                  ><svg
-                    role="presentation"
-                    stroke-width="2"
-                    focusable="false"
-                    width="22"
-                    height="22"
-                    class="icon icon-cart"
-                    viewBox="0 0 22 22"
-                  >
-                    <path
-                      d="M9.182 18.454a.91.91 0 1 1-1.818 0 .91.91 0 0 1 1.818 0Zm7.272 0a.91.91 0 1 1-1.818 0 .91.91 0 0 1 1.819 0Z"
-                      fill="currentColor"
-                    ></path>
-                    <path
-                      d="M5.336 6.636H21l-3.636 8.182H6.909L4.636 3H1m8.182 15.454a.91.91 0 1 1-1.818 0 .91.91 0 0 1 1.818 0Zm7.272 0a.91.91 0 1 1-1.818 0 .91.91 0 0 1 1.819 0Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                  <div class="header__cart-count">
-                    <cart-count
-                      class="count-bubble opacity-0"
-                      aria-hidden="true"
-                      >0</cart-count
-                    >
-                  </div>
-                </a>
-              </div>
-            </div>
           </div>
         </store-header> </height-observer
       ><navigation-drawer
@@ -5374,7 +4910,7 @@
                       <price-list class="price-list price-list--lg"
                         ><sale-price class="text-lg">
                           <span class="sr-only">Sale price</span
-                          ><span class="money">$67.00 AUD</span></sale-price
+                          ><span class="money">£67.00 GBP</span></sale-price
                         ></price-list
                       >
                       <div class="product-info__badge-list">
@@ -6592,7 +6128,7 @@
                 ><price-list class="price-list"
                   ><sale-price class="text-subdued">
                     <span class="sr-only">Sale price</span
-                    ><span class="money">$67.00 AUD</span></sale-price
+                    ><span class="money">£67.00 GBP</span></sale-price
                   ></price-list
                 >
               </div>
@@ -6652,7 +6188,7 @@
                 ><price-list class="price-list"
                   ><sale-price class="text-subdued">
                     <span class="sr-only">Sale price</span
-                    ><span class="money">$67.00 AUD</span></sale-price
+                    ><span class="money">£67.00 GBP</span></sale-price
                   ></price-list
                 >
               </div>
@@ -8272,9 +7808,7 @@
                       >
                     </li>
                     <li>
-                      <a
-                        href="/collections/all"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >Shop</a
                       >
                     </li>
@@ -8286,23 +7820,17 @@
                       >
                     </li>
                     <li>
-                      <a
-                        href="/pages/our-mission"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >About Us</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/pages/faqs"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >FAQ’s</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/pages/contact"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >Contact</a
                       >
                     </li>
@@ -8312,44 +7840,32 @@
                   <p class="bold">info Links</p>
                   <ul class="v-stack gap-3" role="list">
                     <li>
-                      <a
-                        href="/search"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >Search</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/pages/privacy-policy"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >Privacy Policy</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/policies/refund-policy"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >Refund policy</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/pages/shipping-information"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >Shipping Information</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/policies/terms-of-service"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >Terms of Service</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="/pages/zip-own-it-now-pay-later"
-                        class="inline-block link-faded break-all"
+                      <a href="/" class="inline-block link-faded break-all"
                         >About Zip</a
                       >
                     </li>
@@ -8833,7 +8349,7 @@
       <script id="kaching-bundles-config" type="application/json">
         {
           "shopifyDomain": "forthehouseco.myshopify.com",
-          "moneyFormat": "\u003cspan class=money\u003e${{amount}}\u003c\/span\u003e",
+          "moneyFormat": "\u003cspan class=money\u003e£{{amount}}\u003c\/span\u003e",
           "liquidLocale": "en",
           "marketId": 2296184913,
           "productId": 7775606931537,
@@ -9165,4 +8681,442 @@
       <!-- Kaching Bundles App Embed End -->
     </div>
   </body>
+  <script>
+    console.log("working");
+    // Bundle configuration with prices and redirect URLs
+    const bundleConfig = {
+      "6fc5edde-f1e6-4d0a-bb05-5d2937a8522a": {
+        price: "£67.00 GBP",
+        redirectUrl: "https://example.com/buy-1-item",
+        title: "BUY 1",
+      },
+      "87775891-7192-4ee9-9c73-470edb61df73": {
+        price: "£120.60 GBP",
+        redirectUrl: "https://example.com/buy-2-items",
+        title: "BUY 2",
+      },
+      "c24ebf92-177d-4d65-a108-84379b8f84ea": {
+        price: "£170.85 GBP",
+        redirectUrl: "https://example.com/buy-3-items",
+        title: "BUY 3",
+      },
+    };
+
+    // Function to wait for elements to exist
+    function waitForElements(selectors, timeout = 10000) {
+      return new Promise((resolve, reject) => {
+        const startTime = Date.now();
+
+        function checkElements() {
+          console.log("Checking for required elements...");
+
+          const foundElements = {};
+          let allFound = true;
+
+          for (const [key, selectorArray] of Object.entries(selectors)) {
+            let element = null;
+
+            // Try each selector in the array
+            for (const selector of selectorArray) {
+              element = document.querySelector(selector);
+              if (element) {
+                console.log(`✓ Found ${key} with selector: ${selector}`);
+                break;
+              }
+            }
+
+            if (element) {
+              foundElements[key] = element;
+            } else {
+              console.log(`✗ Missing ${key}`);
+              allFound = false;
+            }
+          }
+
+          if (allFound) {
+            console.log("All required elements found!");
+            resolve(foundElements);
+          } else if (Date.now() - startTime > timeout) {
+            console.error("Timeout waiting for elements");
+            reject(new Error("Timeout waiting for required elements"));
+          } else {
+            setTimeout(checkElements, 250); // Check every 250ms
+          }
+        }
+
+        checkElements();
+      });
+    }
+
+    // Function to wait for bundle radios specifically
+    function waitForBundleRadios(timeout = 10000) {
+      return new Promise((resolve, reject) => {
+        const startTime = Date.now();
+
+        function checkRadios() {
+          const radios = document.querySelectorAll(
+            'input[name^="kaching-bundles-deal"]'
+          );
+          console.log(`Found ${radios.length} bundle radio buttons`);
+
+          if (radios.length > 0) {
+            // Verify that all expected bundles are present
+            const foundIds = Array.from(radios).map((r) => r.value);
+            const expectedIds = Object.keys(bundleConfig);
+
+            const allBundlesFound = expectedIds.every((id) =>
+              foundIds.includes(id)
+            );
+
+            if (allBundlesFound) {
+              console.log("All bundle radios found and verified");
+              resolve(radios);
+            } else {
+              console.log("Some bundles missing, continuing to wait...");
+              console.log("Expected:", expectedIds);
+              console.log("Found:", foundIds);
+
+              if (Date.now() - startTime > timeout) {
+                resolve(radios); // Resolve with what we have
+              } else {
+                setTimeout(checkRadios, 250);
+              }
+            }
+          } else {
+            if (Date.now() - startTime > timeout) {
+              reject(new Error("No bundle radios found after timeout"));
+            } else {
+              setTimeout(checkRadios, 250);
+            }
+          }
+        }
+
+        checkRadios();
+      });
+    }
+
+    // Function to update price display
+    function updatePriceDisplay(selectedVariantId, priceElement) {
+      const config = bundleConfig[selectedVariantId];
+      if (!config) {
+        console.warn(`No config found for variant: ${selectedVariantId}`);
+        return;
+      }
+
+      if (priceElement) {
+        const oldPrice = priceElement.textContent;
+        priceElement.textContent = config.price;
+        console.log(`Price updated from "${oldPrice}" to "${config.price}"`);
+      } else {
+        console.error("Price element not available for update");
+      }
+    }
+
+    // Function to get currently selected bundle
+    function getSelectedBundle() {
+      const selectedRadio = document.querySelector(
+        'input[name^="kaching-bundles-deal"]:checked'
+      );
+      return selectedRadio ? selectedRadio.value : null;
+    }
+
+    // Function to handle bundle selection changes
+    function initializeBundleSelection(bundleRadios, priceElement) {
+      console.log(`Initializing ${bundleRadios.length} bundle radios`);
+
+      bundleRadios.forEach((radio, index) => {
+        console.log(`Setting up radio ${index}: ${radio.value}`);
+
+        // Remove any existing listeners to prevent duplicates
+        radio.removeEventListener("change", handleRadioChange);
+
+        function handleRadioChange() {
+          if (this.checked) {
+            console.log(`Bundle selection changed to: ${this.value}`);
+            updatePriceDisplay(this.value, priceElement);
+
+            // Update visual selection
+            document
+              .querySelectorAll(".kaching-bundles__bar")
+              .forEach((bar) => {
+                bar.classList.remove("kaching-bundles__bar--selected");
+              });
+
+            const parentBar = this.closest(".kaching-bundles__bar");
+            if (parentBar) {
+              parentBar.classList.add("kaching-bundles__bar--selected");
+            }
+          }
+        }
+
+        radio.addEventListener("change", handleRadioChange);
+
+        // Also handle clicks on labels
+        const label = document.querySelector(`label[for="${radio.id}"]`);
+        if (label) {
+          label.removeEventListener("click", handleLabelClick);
+
+          function handleLabelClick() {
+            setTimeout(() => {
+              if (radio.checked) {
+                console.log(`Label clicked for: ${radio.value}`);
+                updatePriceDisplay(radio.value, priceElement);
+              }
+            }, 10);
+          }
+
+          label.addEventListener("click", handleLabelClick);
+        }
+      });
+    }
+
+    // Function to intercept form submission
+    function interceptFormSubmission(form) {
+      console.log("Setting up form submission interception");
+
+      // Remove existing listeners to prevent duplicates
+      const newForm = form.cloneNode(true);
+      form.parentNode.replaceChild(newForm, form);
+      form = newForm;
+
+      // Override form submission
+      form.addEventListener(
+        "submit",
+        function (e) {
+          console.log("Form submission intercepted");
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+
+          handleFormSubmit(this);
+          return false;
+        },
+        true
+      );
+
+      // Intercept all submit buttons
+      const submitButtons = form.querySelectorAll(
+        'button[type="submit"], input[type="submit"]'
+      );
+      console.log(`Found ${submitButtons.length} submit buttons`);
+
+      submitButtons.forEach((button, index) => {
+        console.log(`Setting up submit button ${index}`);
+
+        button.addEventListener(
+          "click",
+          function (e) {
+            console.log(`Submit button ${index} clicked`);
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+
+            handleFormSubmit(form, this);
+            return false;
+          },
+          true
+        );
+      });
+
+      return form;
+    }
+
+    // Function to handle form submission
+    function handleFormSubmit(form, button = null) {
+      const selectedBundle = getSelectedBundle();
+      console.log("Handling form submit, selected bundle:", selectedBundle);
+
+      if (selectedBundle && bundleConfig[selectedBundle]) {
+        const config = bundleConfig[selectedBundle];
+        console.log(`Redirecting to: ${config.redirectUrl}`);
+
+        // Add loading state
+        if (button) {
+          button.disabled = true;
+          const originalText = button.textContent || button.innerHTML;
+          button.textContent = "Loading...";
+
+          // Restore button state if redirect fails
+          setTimeout(() => {
+            button.disabled = false;
+            button.textContent = originalText;
+          }, 5000);
+        }
+
+        // Redirect after short delay
+        setTimeout(() => {
+          window.location.href = config.redirectUrl;
+        }, 300);
+      } else {
+        console.error("No valid bundle selected");
+        alert("Please select a bundle option");
+      }
+    }
+
+    // Function to set initial state
+    function setInitialState(bundleRadios, priceElement) {
+      console.log("Setting initial state...");
+
+      // Find initially selected bundle
+      let initialSelected = document.querySelector(
+        '.kaching-bundles__bar--selected input[type="radio"]'
+      );
+
+      if (!initialSelected) {
+        // If no visual selection, check for checked radio
+        initialSelected = document.querySelector(
+          'input[name^="kaching-bundles-deal"]:checked'
+        );
+      }
+
+      if (!initialSelected && bundleRadios.length > 0) {
+        // Default to first radio
+        initialSelected = bundleRadios[0];
+        initialSelected.checked = true;
+        const parentBar = initialSelected.closest(".kaching-bundles__bar");
+        if (parentBar) {
+          parentBar.classList.add("kaching-bundles__bar--selected");
+        }
+      }
+
+      if (initialSelected) {
+        updatePriceDisplay(initialSelected.value, priceElement);
+        console.log(`Initial selection set to: ${initialSelected.value}`);
+      } else {
+        console.error("Could not set initial state - no radios found");
+      }
+    }
+
+    // Main initialization function
+    async function initialize() {
+      console.log("🚀 Starting bundle handler initialization...");
+
+      try {
+        // Wait for critical elements to load
+        console.log("⏳ Waiting for elements to load...");
+
+        const requiredElements = await waitForElements({
+          form: [
+            "#product-form-7775606931537-template--16333634502737__main",
+            ".shopify-product-form",
+            'form[action*="/cart/add"]',
+            'form[is="product-form"]',
+          ],
+          priceElement: [
+            ".price-list .money",
+            "sale-price .money",
+            ".money",
+            '[class*="price"] .money',
+          ],
+        });
+
+        // Wait for bundle radios
+        console.log("⏳ Waiting for bundle radios...");
+        const bundleRadios = await waitForBundleRadios();
+
+        console.log("✅ All elements loaded successfully!");
+        console.log("Elements found:", {
+          form: requiredElements.form.tagName,
+          priceElement: requiredElements.priceElement.tagName,
+          bundleRadios: bundleRadios.length,
+        });
+
+        // Initialize functionality in order
+        console.log("🔧 Setting up functionality...");
+
+        // 1. Set initial state first
+        setInitialState(bundleRadios, requiredElements.priceElement);
+
+        // 2. Set up bundle selection handlers
+        initializeBundleSelection(bundleRadios, requiredElements.priceElement);
+
+        // 3. Set up form interception
+        interceptFormSubmission(requiredElements.form);
+
+        console.log("🎉 Bundle handler initialized successfully!");
+      } catch (error) {
+        console.error("❌ Failed to initialize bundle handler:", error);
+
+        // Fallback: try to initialize with whatever elements we can find
+        console.log("🔄 Attempting fallback initialization...");
+
+        const form = document.querySelector(
+          '.shopify-product-form, form[action*="/cart/add"]'
+        );
+        const priceElement = document.querySelector(".money");
+        const bundleRadios = document.querySelectorAll(
+          'input[name^="kaching-bundles-deal"]'
+        );
+
+        if (form && bundleRadios.length > 0) {
+          console.log("Fallback initialization with limited elements");
+          if (priceElement) {
+            setInitialState(bundleRadios, priceElement);
+            initializeBundleSelection(bundleRadios, priceElement);
+          }
+          interceptFormSubmission(form);
+        } else {
+          console.error("Fallback failed - critical elements missing");
+        }
+      }
+    }
+
+    // Enhanced initialization with multiple triggers
+    console.log("Bundle handler script loaded");
+
+    // Wait for DOM to be fully loaded
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM loaded, starting initialization...");
+        setTimeout(initialize, 100); // Small delay to ensure all elements are rendered
+      });
+    } else {
+      console.log("DOM already loaded, starting initialization...");
+      setTimeout(initialize, 100);
+    }
+
+    // Additional safety net for dynamic content
+    setTimeout(() => {
+      console.log("Safety net initialization attempt...");
+      initialize();
+    }, 1000);
+
+    // Watch for dynamic content changes
+    const observer = new MutationObserver((mutations) => {
+      let shouldReinitialize = false;
+
+      mutations.forEach((mutation) => {
+        if (mutation.type === "childList") {
+          const addedNodes = Array.from(mutation.addedNodes);
+          const hasRelevantContent = addedNodes.some(
+            (node) =>
+              node.nodeType === 1 &&
+              node.matches &&
+              (node.matches(".shopify-product-form") ||
+                node.matches('[class*="kaching-bundles"]') ||
+                (node.querySelector &&
+                  (node.querySelector(".shopify-product-form") ||
+                    node.querySelector('[class*="kaching-bundles"]'))))
+          );
+
+          if (hasRelevantContent) {
+            shouldReinitialize = true;
+          }
+        }
+      });
+
+      if (shouldReinitialize) {
+        console.log("🔄 Dynamic content detected, reinitializing...");
+        setTimeout(initialize, 500);
+      }
+    });
+
+    // Start observing after initial load
+    setTimeout(() => {
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }, 2000);
+  </script>
 </html>
