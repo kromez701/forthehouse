@@ -8692,12 +8692,12 @@
       },
       "87775891-7192-4ee9-9c73-470edb61df73": {
         price: "£59.98 GBP",
-        redirectUrl: "https://n2kzpa-uw.myshopify.com/cart/52227286499661:2s",
+        redirectUrl: "https://n2kzpa-uw.myshopify.com/cart/52227286499661:2",
         title: "BUY 2",
       },
       "c24ebf92-177d-4d65-a108-84379b8f84ea": {
         price: "£89.97 GBP",
-        redirectUrl: "https://n2kzpa-uw.myshopify.com/cart/52227286499661:3s",
+        redirectUrl: "https://n2kzpa-uw.myshopify.com/cart/52227286499661:3",
         title: "BUY 3",
       },
     };
@@ -9118,5 +9118,47 @@
         subtree: true,
       });
     }, 2000);
+
+    // Function to update bundle prices
+    function updateBundlePrices() {
+      // Loop through each bundle configuration
+      Object.keys(bundleConfig).forEach((dealBarId) => {
+        const config = bundleConfig[dealBarId];
+
+        // Find the corresponding bar element by data-deal-bar-id
+        const barElement = document.querySelector(
+          `[data-deal-bar-id="${dealBarId}"]`
+        );
+
+        if (barElement) {
+          // Find the price element within this bar
+          const priceElement = barElement.querySelector(
+            ".kaching-bundles__bar-price .money"
+          );
+
+          if (priceElement) {
+            // Extract just the price part (remove " GBP")
+            const priceValue = config.price.replace(" GBP", "");
+            priceElement.textContent = priceValue;
+
+            console.log(`Updated price for ${config.title}: ${priceValue}`);
+          } else {
+            console.warn(`Price element not found for ${config.title}`);
+          }
+        } else {
+          console.warn(`Bar element not found for deal ID: ${dealBarId}`);
+        }
+      });
+    }
+
+    // Run the function when DOM is ready
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", updateBundlePrices);
+    } else {
+      updateBundlePrices();
+    }
+
+    // Optional: Export for manual execution
+    window.updateBundlePrices = updateBundlePrices;
   </script>
 </html>
